@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejercicio Final</title>
+        <link rel="icon" href="https://webusstatic.yo-star.com/ark_us_web/pc/favicon.png">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/nav.css">
+        <link rel="stylesheet" href="css/lightbox.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rozha+One&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!--Navegador-->
+        <header class="cd-auto-hide-header">
+            <div class="logo"><a href="#0"><img src="imgs/rhodes_island_logo.png" alt="Logo"></a></div>
+        
+            <nav class="cd-primary-nav">
+                <a href="#cd-navigation" class="nav-trigger">
+                    <span>
+                        <em aria-hidden="true"></em>
+                        Menu
+                    </span>
+                </a> <!-- .nav-trigger -->
+        
+                <ul id="cd-navigation">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="videos.html">Videos</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav> <!-- .cd-primary-nav -->
+        </header> <!-- .cd-auto-hide-header -->
+
+
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="imgs/2020_chinese_new_year_Dishwasher1910.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="imgs/contingency_contract_season_4_operation_lead_seal_海鵜げそ.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="imgs/episode_6_partial_necrosis_opening_ノキト.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="imgs/episode_7_the birth_of_tragedy_opening_MORUGA.webp" alt=""></div>
+            <div class="swiper-slide"><img src="imgs/mansfield_break_event_尾崎ドミノ.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="imgs/stories_of_afternoon_event_白滝.png" alt=""></div>
+            <div class="swiper-slide"><img src="imgs/twitter_160k_followers_commemorative_Csyday.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="imgs/who_is_real_event_クレタ様.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="imgs/youtube_150k_subscribers_commemorative _syuri22.jpg" alt=""></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <!-- Fin Swiper -->
+
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+            },
+            pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            },
+            navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+            },
+        });
+        </script>
+        <!-- Fin Swiper -->
+
+        <!-- .cd-main-content -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+        <script>
+            if( !window.jQuery ) document.write('<script src="js/jquery-3.0.0.min.js"><\/script>');
+        </script>
+        <script src="js/main.js"></script> <!-- Resource jQuery -->
+
+    </body>
+
+</html>
